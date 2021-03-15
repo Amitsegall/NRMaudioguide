@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: The Science Museum Audio Guide
+title: The National Railway Museum Audio Guide
 email: your-email@example.com
 description: > # this means to ignore newlines until "baseurl:"
-  The Science Museum Audio Guide.
-baseurl: "/WebAudioPlayer" # the subpath of your site, e.g. /blog
+  The National Railway Museum Audio Guide.
+baseurl: "/NRMaudioguide" # the subpath of your site, e.g. /blog
 audio_path: "/audio/"
 episode_hero_path: "/assets/img/stops/"
 url: "https://thesciencemuseum.github.io/" # the base hostname & protocol for your site
@@ -26,4 +26,4 @@ headphones_icon_light: "/assets/img/icons/headphones-light.png"
 markdown: kramdown
 
 # Version settings (version number below is used for cache busting CSS and JS)
-version_number: 2.0.1.1
+version_number: 2.0.0.1
