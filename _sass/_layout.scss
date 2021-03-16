@@ -560,7 +560,7 @@ Audio Player Styling
         padding-bottom: $player-now-playing-size / 2;;
         margin-bottom: 0;
     }
-    
+
 }
 
 .player-buttons {
@@ -573,13 +573,13 @@ Audio Player Styling
         float: right;
         line-height: $player-button-size;
         vertical-align: top;
-        color: $player-bgcolor;
+        color: #00FFFB;
     }
     .player-buttons-next-number {
         float: left;
         line-height: $player-button-size;
         vertical-align: top;
-        color: $player-bgcolor;
+        color: #00FFFB;
     }
     .player-buttons-prev {
         display: inline-block;
