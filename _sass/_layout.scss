@@ -400,7 +400,7 @@
         margin: 0 auto;
         //background-color: $tile-bgcolor;
         background-size: 100%;
-        color: $tile-color;
+        color: $background-color; //color of number inside headphones icon
         width: $tile-size-large;
         height: $tile-size-large;
         span {
@@ -424,7 +424,7 @@
     }
     .post-header-title {
         //color: lighten($brand-color, 10%);
-        color: #00FFFB;
+        color: #FF6428;
         font-size: 20px;
         line-height: 26px;
         margin-top: 0;
@@ -453,9 +453,9 @@
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 14px; //text credis in page
         //color: lighten($brand-color, 10%);
-        color:#00FFFB;
+        color:#FF6428;
         @include media-query($on-laptop) {
             //font-size: 18px;
         }
@@ -573,13 +573,13 @@ Audio Player Styling
         float: right;
         line-height: $player-button-size;
         vertical-align: top;
-        color: #00FFFB;
+        color: darken($background-darker, 5%); //number of station left right
     }
     .player-buttons-next-number {
         float: left;
         line-height: $player-button-size;
         vertical-align: top;
-        color: #00FFFB;
+        color: darken($background-darker, 5%);
     }
     .player-buttons-prev {
         display: inline-block;

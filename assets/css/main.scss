@@ -18,11 +18,11 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       	#FFFFFF;
+$text-color:       	#FFFFFF; //main body text colour
 $background-hr:		#FFFFFF;
-$background-color: 	#00615F;
+$background-color: 	#232323;
 $background-darker: #1B1B1B;
-$brand-color:	   	#00615F;
+$brand-color:	   	#232323;
 $anchor-hover-color:	lighten($brand-color, 30%);
 
 $player-now-playing-size:   13px;
@@ -36,7 +36,7 @@ $player-play-color:		lighten($brand-color, 5%);
 $player-progress-height: 10px;
 
 $tile-bgcolor:	   $brand-color;
-$tile-color:	   #fafafa;
+$tile-color:	   #FF6428;  //color of the number inside the headphones
 $tile-size:		   56px;
 $tile-size-large:  64px;
 $tile-border-radius:	2px;
