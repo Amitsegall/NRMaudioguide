@@ -1,12 +1,15 @@
-# Static Museum Audio Guide
+# NRM soundtracks audio trail
+This is an audio trail for the National Railway Museum in York, it has 10 stops and can be experienced at any order [NRM](https://www.railwaymuseum.org.uk/) May, 2021.
 
-A [Jekyll](http://jekyllrb.com/) static site generator theme for building lightweight audio tours for exhibitions or museums.
+This version can be adapted to any need by following the instructions below:
+
+This was built as a [Jekyll](http://jekyllrb.com/) static site generator theme for building lightweight audio tours for exhibitions or museums.
 
 ## Overview
 
-This template is built on top of the [Jekyll new](https://github.com/jglovier/jekyll-new) theme by [Joel Glovier](http://joelglovier.com/). While it is reusable in its current form, it was purpose built for the Scorsese Exhibition at ACMI. Take a look at a live version, and view the [Scorsese Audio Guide](https://guides.acmi.net.au/scorsese/welcome). For a demo of this version, take a look at the Github pages hosted demo: http://acmilabs.github.io/static-museum-audio-guide/welcome/
+This template is built on top of the [Jekyll new](https://github.com/jglovier/jekyll-new) theme by [Joel Glovier](http://joelglovier.com/). While it is reusable in its current form, it was purpose built for the Scorsese Exhibition at ACMI. Take a look at a live version, and view the [Scorsese Audio Guide](https://guides.acmi.net.au/scorsese/welcome). For a demo of this version, take a look at the Github pages hosted demo: http://acmilabs.github.io/static-museum-audio-guide/welcome/ and for the original repository check [ACMILabs - Static Museum Audio Guide](https://github.com/ACMILabs/static-museum-audio-guide)
 
-Some image editing / Photoshop skills will be required to build a finished guide. Parts of the theme (such as the welcome page) are just plain old HTML and will need to be customised for your guide.
+Some image editing / Photoshop skills will be required to build a finished guide. Parts of the theme (such as the welcome page) are just plain old HTML and will need to be customised for your guide - as they are disabled in this version.
 
 The audio guide features the following main pages:
 
@@ -28,24 +31,28 @@ There is also a simple page at `/connected` as a landing page if you are using C
   - `layout` - this should be set to `episode`
   - `permalink` - the default structure is `/stops/1` (replace the number with the desired permalink)
   - `type` - set this to `stop` - type is used for generating the slide down menus
-  - `section_title` - this appears at the top of each stop page
+  - `section_title` - this appears at the top of each stop page (used as the location of the stop in this version)
   - `title` - this is a sub-heading, but is typically the name of the actual object in the exhibition, and is used as the title of the page.
   - `page_rank` - this is used to order the stops in the menu and slide-down menu
-  - `stop_id` - if you wanted, you could give the stop a different ID number to its page rank, but you should probably keep it the same as the permalink and page_rank.
+  - `stop_id` - if you wanted, you could give the stop a different ID number to its page rank, but you should probably keep it the same as the permalink and page_rank.(in this version the stop id is hidden by changing it's colour to the back colour)
   - `audio_file` - just the filename and extension of the MP3 file to play
   - `hero_images` - an array of `path` and `alt_text` values for the hero image on the audio guide stop page. Multiple images will appear in an image carousel (using Slick JS). The `path` should just be the image filename and extension. The folder location is set in the main site settings `config.yml`. Good image settings for this are 512 x 341 pixels (1.5:1 aspect ratio) JPEG at 50 - 60% compression.
 6. Update `config.yml` with settings for your particular guide. You can use the default settings, but be sure to update the `title`, `description`, `url` and `twitter` usernames for your site. If you want to change the folder structure for the MP3s or hero images, you can do that here.
-7. Create a new logo and save it over `/assets/img/logo/audio-guide.png`.
-8. Replace the footer logo and link with your own organisation or partner logos in `_includes/footer.html`.
+7. Create a new logo and save it over `/assets/img/logo/audio-guide.png`. (not used in this version)
+8. Replace the footer logo and link with your own organisation or partner logos in `_includes/footer.html`. (not used in this version)
 9. Update `/assets/img/meta/og-image.jpg` with an image you'd like to have appear when the site is shared on social media. (This is used for Open Graph tags, pulled by Facebook and other sites).
 10. To change colour scheme, update the variable `$brand-color` in `css/main.scss` with your main colour. Most of the other colours in the web app will be calculated from this one.
+in this guide, text colour is changed under `_layouts.scss`.  
 11. Add Font import or @font-face statements to `_sass/_fonts.scss` and update `$base-font-family` in `_css/main.scss` to swap fonts.
 12. Once you're happy with your content and have updated all styling and branding above, launch your site locally with `jekyll serve` at the command line. Navigate to a stop in the audio tour and take screenshots at mobile resolution.
 13. Update the images in `assets/img/welcome` with these screenshots from your own web app.
-14. In `_layouts/welcome/html` update the mark-up of the welcome pages to give an overview to your web app.
-15. Once you're happy with your audio guide, drop in your own Google Analytics or Google Tag Manager snippet into `_includes/tagmanager.html`.
+14. In `_layouts/welcome/html` update the mark-up of the welcome pages to give an overview to your web app. (not used in this version)
+15. to add or change the header image go to  `episode.html` and update the file.
+16. Once you're happy with your audio guide, drop in your own Google Analytics or Google Tag Manager snippet into `_includes/tagmanager.html`.
 
 Each time you update the JS or CSS files, you may wish to update `version_number` in `config.yml`. This is appended a query string to the CSS link and JS script tag in the Head element for [cache busting](https://css-tricks.com/strategies-for-cache-busting-css/).
+
+
 
 ## Deployment
 
